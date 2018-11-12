@@ -1,0 +1,28 @@
+How to use:
+
+-Please run the program from the 'Main' class. You will then be prompted to enter your inputs
+on the command line. 
+
+-The program will check if the inputs are in a valid format and prompt you to enter your inputs again if they are found to be invalid. 
+
+-The results will be printed to the command line at the end of the program.
+
+Design:
+
+-The 3 classes used in this assignment are Rover, Plateau and Position. 
+
+-A position is a simple x and y coordinate pair to describe a position on the plateau. 
+
+-The rover object contains a position (x and y coordinate) on the plateau, a cardinal direction to indicate where it is facing and a move sequence made up of R,L & M that describes the moves the rover will make
+
+-The plateau object is set up as a simple grid of x and y coordinates. The plateau keeps track of the positions currently occupied by rovers to ensure they do not crash into one another or go out of bounds.
+
+Assumptions:
+
+-Only one rover can occupy a postion at a time (i.e two rovers cannot share the same position)
+
+-If a rover is about to collide into another rover it will stop at its current position and terminate
+
+-Rovers cannot go out of bounds (i.e cannot exceed the plateaus size)
+
+-If a rover is about to go out of bounds it will stop at its current positions and terminate
